@@ -11,10 +11,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.servicio.visita.model.Visita;
 import com.servicio.visita.service.VisitaService;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+@RestController
+@RequestMapping("/api/v1/visitas")
 public class VisitaController {
     @Autowired
     private VisitaService visitaService;
